@@ -1,0 +1,139 @@
+body{
+    background-color:#f9f8f6;
+}
+
+.header{
+    padding-top:20px;
+    .logo{
+        margin:10px;
+    }
+    ul{
+        margin-top:20px;
+        float:right;
+        li{
+          list-style: none;
+          display: inline-block;
+          margin-left:15px;
+        }
+    }
+}
+
+.footer{
+    text-align:center;
+    hr{
+        color:#f9f8f6;
+    }
+    .totop{
+        text-align:right;
+    }
+    ul{
+        margin: 10px auto;
+        li{
+          font-size:12px;
+          list-style: none;
+          display: inline-block;
+        }
+    }
+    .copyright{
+        font-size:10px;
+        color: #b8b4ac;
+    }
+}
+
+.maincontent{
+    min-width:960px;
+}
+
+.content{
+    min-width:710px;
+    ul{
+        li{
+            margin:3px;
+            padding:0px;
+            width:32%;
+            list-style: none;
+            display: inline-block;
+            .product{
+                width:98%;
+                background-color:white;
+                padding:10px 5px;
+                text-align:center;
+                img{
+                    width:205px;
+                }
+                .memo{
+                    margin:10px;
+                    font-size:12px;
+                    text-align:left;
+                }
+                .price{
+                    margin:10px;
+                    font-size:12px;
+                    text-align:left;
+                }
+            }
+        }
+    }
+    .shopguide{
+        .title{
+            font-size: 16px;
+            color: #887f69;
+            margin-bottom:5px;
+        }
+        .heading{
+            color: #887f69;
+            margin-bottom:5px;
+            font-size:12px;
+        }
+        .shopbody{
+            margin-bottom:5px;
+            font-size:12px;
+        }
+        background-color:white;
+        width:45%;
+        margin:2px;
+        padding:15px;
+        float:left;
+    }
+}
+
+.sidebar{
+    ul{
+        li{
+            list-style: none;
+            margin:0px;
+            margin-bottom:10px;
+            .title{
+                font-size:12px;
+                color:white;
+                padding:13px;
+                background-color:#887f69;
+            }
+            .sidetab{
+                background-color:white;
+                padding:10px;
+                .more{
+                    padding: 0px 30px;
+                }
+            }
+            .categories{
+                display:none;
+                ul{
+                    margin:0px;
+                    padding:0px;
+                    li{
+                        background-color:white;
+                        margin:0px;
+                        margin-bottom:3px;
+                        padding:10px;
+//                        border-bottom:1px solid #887f69;
+                        img{
+                            padding:3px;
+                            float:right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

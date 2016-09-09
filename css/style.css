@@ -1,0 +1,104 @@
+body {
+  background-color: #f9f8f6; }
+
+.header {
+  padding-top: 20px; }
+  .header .logo {
+    margin: 10px; }
+  .header ul {
+    margin-top: 20px;
+    float: right; }
+    .header ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 15px; }
+
+.footer {
+  text-align: center; }
+  .footer hr {
+    color: #f9f8f6; }
+  .footer .totop {
+    text-align: right; }
+  .footer ul {
+    margin: 10px auto; }
+    .footer ul li {
+      font-size: 12px;
+      list-style: none;
+      display: inline-block; }
+  .footer .copyright {
+    font-size: 10px;
+    color: #b8b4ac; }
+
+.maincontent {
+  min-width: 960px; }
+
+.content {
+  min-width: 710px; }
+  .content ul li {
+    margin: 3px;
+    padding: 0px;
+    width: 32%;
+    list-style: none;
+    display: inline-block; }
+    .content ul li .product {
+      width: 98%;
+      background-color: white;
+      padding: 10px 5px;
+      text-align: center; }
+      .content ul li .product img {
+        width: 205px; }
+      .content ul li .product .memo {
+        margin: 10px;
+        font-size: 12px;
+        text-align: left; }
+      .content ul li .product .price {
+        margin: 10px;
+        font-size: 12px;
+        text-align: left; }
+  .content .shopguide {
+    background-color: white;
+    width: 45%;
+    margin: 2px;
+    padding: 15px;
+    float: left; }
+    .content .shopguide .title {
+      font-size: 16px;
+      color: #887f69;
+      margin-bottom: 5px; }
+    .content .shopguide .heading {
+      color: #887f69;
+      margin-bottom: 5px;
+      font-size: 12px; }
+    .content .shopguide .shopbody {
+      margin-bottom: 5px;
+      font-size: 12px; }
+
+.sidebar ul li {
+  list-style: none;
+  margin: 0px;
+  margin-bottom: 10px; }
+  .sidebar ul li .title {
+    font-size: 12px;
+    color: white;
+    padding: 13px;
+    background-color: #887f69; }
+  .sidebar ul li .sidetab {
+    background-color: white;
+    padding: 10px; }
+    .sidebar ul li .sidetab .more {
+      padding: 0px 30px; }
+  .sidebar ul li .categories {
+    display: none; }
+    .sidebar ul li .categories ul {
+      margin: 0px;
+      padding: 0px; }
+      .sidebar ul li .categories ul li {
+        background-color: white;
+        margin: 0px;
+        margin-bottom: 3px;
+        padding: 10px; }
+        .sidebar ul li .categories ul li img {
+          padding: 3px;
+          float: right; }
+
+/*# sourceMappingURL=style.css.map */
