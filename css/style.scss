@@ -98,6 +98,24 @@ body{
 }
 
 .sidebar{
+    .search{
+        background-color:white;
+        padding:20px;
+        input{
+            background-color: #eeeeee;
+            width:100%;
+            background-image: url("../images/top/search_icon.png");
+            background-repeat: no-repeat;
+            background-position: 90%;
+            margin-bottom:5px;
+            border:0px;
+        }
+        p{
+            color: #887f69;
+            font-weight:bold;
+            margin-bottom:5px;
+        }
+    }
     ul{
         li{
             list-style: none;
@@ -108,6 +126,12 @@ body{
                 color:white;
                 padding:13px;
                 background-color:#887f69;
+            }
+            .humberger{
+                img{
+                    padding:3px;
+                    float:right;
+                }                
             }
             .sidetab{
                 background-color:white;

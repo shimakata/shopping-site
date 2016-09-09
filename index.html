@@ -23,7 +23,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -44,7 +45,12 @@
         </div>
         <div class="row maincontent">
             <div class="nine columns content">
-                <img src="./images/top/ca_banner.jpg" width="100%">
+                <div class="owl-carousel owl-theme" id="eyecatch">
+                  <img class="u-full-width" src="images/top/ca_banner.jpg" alt="" />
+                  <img class="u-full-width" src="images/top/ca_banner.jpg" alt="" />
+                  <img class="u-full-width" src="images/top/ca_banner.jpg" alt="" />
+                  <img class="u-full-width" src="images/top/ca_banner.jpg" alt="" />
+                </div>
                 <img src="./images/top/title_newitems.png" width="100%">
                 <ul>
                     <li>
@@ -163,9 +169,13 @@
             </div>
         
             <div class="three columns sidebar">
+                <div class="search">
+                    <p>ITEM SEARCH</p>
+                    <INPUT TYPE="TEXT" Placeholder="Search..">
+                </div>
                 <ul>
                     <li>
-                        <div class="title">ページリンク</div>
+                        <div class="title humberger">ページリンク  <img src="./images/top/next_icon.png" class="toggleicon"></div>
                         <div class="categories">
                             <ul>
                                 <li>カテゴリー名 <img src="./images/top/next_icon_gray.png"></li>
@@ -178,7 +188,7 @@
                         </div>                            
                     </li>
                     <li>
-                        <div class="title">CATEGORIES</div>
+                        <div class="title humberger">CATEGORIES  <img src="./images/top/next_icon.png" class="toggleicon"></div>
                         <div class="categories">
                             <ul>
                                 <li>カテゴリー名 <img src="./images/top/next_icon_gray.png"></li>
@@ -242,6 +252,7 @@
         </div>
     </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/owl.carousel.min.js"></script>    
   <script type="text/javascript" src="./js/common.js"></script>    
 </body>
 </html>

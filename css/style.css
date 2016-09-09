@@ -73,6 +73,21 @@ body {
       margin-bottom: 5px;
       font-size: 12px; }
 
+.sidebar .search {
+  background-color: white;
+  padding: 20px; }
+  .sidebar .search input {
+    background-color: #eeeeee;
+    width: 100%;
+    background-image: url("../images/top/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    margin-bottom: 5px;
+    border: 0px; }
+  .sidebar .search p {
+    color: #887f69;
+    font-weight: bold;
+    margin-bottom: 5px; }
 .sidebar ul li {
   list-style: none;
   margin: 0px;
@@ -82,6 +97,9 @@ body {
     color: white;
     padding: 13px;
     background-color: #887f69; }
+  .sidebar ul li .humberger img {
+    padding: 3px;
+    float: right; }
   .sidebar ul li .sidetab {
     background-color: white;
     padding: 10px; }
