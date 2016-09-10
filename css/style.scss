@@ -44,8 +44,7 @@ body{
     min-width:960px;
 }
 
-.content{
-    min-width:710px;
+.products-list{
     ul{
         li{
             margin:3px;
@@ -73,29 +72,153 @@ body{
                 }
             }
         }
+    }    
+}
+
+.shopguide{
+    .title{
+        font-size: 16px;
+        color: #887f69;
+        margin-bottom:5px;
     }
-    .shopguide{
-        .title{
-            font-size: 16px;
+    .heading{
+        color: #887f69;
+        margin-bottom:5px;
+        font-size:12px;
+    }
+    .shopbody{
+        margin-bottom:5px;
+        font-size:12px;
+    }
+    background-color:white;
+    width:45%;
+    margin:2px;
+    padding:15px;
+    float:left;
+}
+
+.top-content{
+    min-width:710px;
+}
+
+.products-content{
+    .breadcrumb{
+        background-color: #e8e4da;
+        padding:10px;
+        p{
+            font-size:11px;
             color: #887f69;
-            margin-bottom:5px;
+            margin:0px;
         }
-        .heading{
-            color: #887f69;
-            margin-bottom:5px;
-            font-size:12px;
-        }
-        .shopbody{
-            margin-bottom:5px;
-            font-size:12px;
-        }
+        margin-bottom:10px;
+    }
+    .products-content-inner{
         background-color:white;
-        width:45%;
-        margin:2px;
-        padding:15px;
-        float:left;
+        padding:30px 65px;
+        .products-name{
+            font-weight:bold;
+            float:left;
+            margin-bottom:5px;
+        }
+        .products-code{
+            font-size:9px;
+            float:right;
+            margin-bottom:5px;
+        }
+        hr{
+            margin:15px 0px;
+            color: #887f69;
+            background-color:#887f69;
+        }
+        .thumbs{
+            padding:0px;
+            margin:0px;
+            width:170px;
+            float:right;
+            list-style: none;
+//            display: inline-block;
+            li{
+                padding:0px;
+                margin-right:0px;
+                margin-left:8px;
+                margin-bottom:3px;
+                float:left;
+                img{
+                    width: 74px;
+                }
+            }
+        }
+        .colorsize{
+            width:100%;
+
+            background-color:#f9f9f5;
+            tr{
+                td{
+                    border:1px solid #887f69;                    
+                    text-align:center;
+                    color:#887f69;
+                    input{
+                        margin:0px;
+                    }
+                }
+                .choice{
+                    background-color:white;
+                }
+                
+            }
+        }
+        .pricecart{
+            .price{
+                float:left;
+                border: 1px solid #887f69;
+                border-width: 1px 0px 1px 0px;
+                padding:10px 0px;
+                img{
+                    margin-top:13px;
+                    float:left;
+                }
+                p{
+                    margin:0px;
+                    padding-left: 120px;
+                    font-style:italic;
+                    span{
+                        font-size: 22px;
+                        color: #e80f66;
+                    }
+                    padding-right:80px;
+                }
+            }
+            img{
+                float:right;
+            }
+        }
+        .quality{
+            padding: 10px 0px;
+            border: 1px solid #887f69;
+            border-width: 0px 0px 1px 0px;
+            margin-bottom:20px;
+            img{
+                margin-top:10px;
+            }
+            input{
+                margin:0px;
+                margin-left:50px;
+                
+            }
+        }
+        .products-memo{
+            .title{
+                color: #887f69;
+                padding: 0px 0px;
+                margin:0px;
+            }
+            .memo{
+                margin-top:10px;
+            }
+        }
     }
 }
+
 
 .sidebar{
     .search{
@@ -160,4 +283,8 @@ body{
             }
         }
     }
+}
+
+.clear{
+    clear:both;
 }
