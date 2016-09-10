@@ -2,7 +2,12 @@ body{
     background-color:#f9f8f6;
 }
 
+.sp{
+    display:none;
+}
+
 .header{
+    min-width:960px;
     padding-top:20px;
     .logo{
         margin:10px;
@@ -16,9 +21,13 @@ body{
           margin-left:15px;
         }
     }
+    .mobile-menu{
+        display:none;
+    }
 }
 
 .footer{
+    min-width:960px;
     text-align:center;
     hr{
         color:#f9f8f6;
@@ -287,4 +296,104 @@ body{
 
 .clear{
     clear:both;
+}
+
+
+@media (max-width: 550px) {
+    .sp{
+        display:block;
+    }
+    .pc{
+        display:none;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    body{
+//        background-color:red;
+    }
+    .header, .footer, .maincontent, .top-content {
+        min-width:0px;
+    }
+    
+    .header{
+        text-align:center;
+        .logo{
+        }
+        .pc-menu{
+            display:none;
+        }
+        .mobile-menu{
+            margin:0px;
+            display:block;
+            float:none;
+        }
+    }
+    
+    .top-content{
+        width:100%;
+        .owl-carousel{
+            width:100%;
+            img{
+            }
+        }
+        .itemtitle{
+            margin: 15px auto;
+        }
+    }
+
+
+    .products-list{
+        ul{
+            li{
+                width:46%;
+                .product{
+                    img{
+                        width:100%;
+                    }
+                    .memo{
+                        margin:3px;
+                    }
+                    .price{
+                        margin:3px;
+                    }
+                }
+            }
+        }    
+    }
+
+    .shopguide{
+        img.card{
+            width:100%;
+        }
+        width:90%;
+        margin:0px;
+        margin-bottom:3px;
+        float:none;
+    }
+    
+    .sidebar{
+        margin-top:10px;
+    }
+    .sidetab{
+        img.sidetabimage{
+            width:45%;
+            float:left;
+        }
+        .memo{
+            font-size:12px;
+            padding:5px;
+            padding-left:48%;
+            margin-bottom:10px;
+        }
+        .more{
+            margin-top:0px;
+            margin-left:40%;
+        }
+    }
+    .footer{
+        .totop{
+            text-align:center;
+        }
+    }
 }

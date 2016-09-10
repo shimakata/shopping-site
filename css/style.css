@@ -1,7 +1,11 @@
 body {
   background-color: #f9f8f6; }
 
+.sp {
+  display: none; }
+
 .header {
+  min-width: 960px;
   padding-top: 20px; }
   .header .logo {
     margin: 10px; }
@@ -12,8 +16,11 @@ body {
       list-style: none;
       display: inline-block;
       margin-left: 15px; }
+  .header .mobile-menu {
+    display: none; }
 
 .footer {
+  min-width: 960px;
   text-align: center; }
   .footer hr {
     color: #f9f8f6; }
@@ -206,5 +213,69 @@ body {
 
 .clear {
   clear: both; }
+
+@media (max-width: 550px) {
+  .sp {
+    display: block; }
+
+  .pc {
+    display: none; }
+
+  .container {
+    padding: 0 10px; }
+
+  .header, .footer, .maincontent, .top-content {
+    min-width: 0px; }
+
+  .header {
+    text-align: center; }
+    .header .pc-menu {
+      display: none; }
+    .header .mobile-menu {
+      margin: 0px;
+      display: block;
+      float: none; }
+
+  .top-content {
+    width: 100%; }
+    .top-content .owl-carousel {
+      width: 100%; }
+    .top-content .itemtitle {
+      margin: 15px auto; }
+
+  .products-list ul li {
+    width: 46%; }
+    .products-list ul li .product img {
+      width: 100%; }
+    .products-list ul li .product .memo {
+      margin: 3px; }
+    .products-list ul li .product .price {
+      margin: 3px; }
+
+  .shopguide {
+    width: 90%;
+    margin: 0px;
+    margin-bottom: 3px;
+    float: none; }
+    .shopguide img.card {
+      width: 100%; }
+
+  .sidebar {
+    margin-top: 10px; }
+
+  .sidetab img.sidetabimage {
+    width: 45%;
+    float: left; }
+  .sidetab .memo {
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 48%;
+    margin-bottom: 10px; }
+  .sidetab .more {
+    margin-top: 0px;
+    margin-left: 40%; }
+
+  .footer .totop {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
