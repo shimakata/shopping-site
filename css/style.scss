@@ -84,6 +84,24 @@ body{
     }    
 }
 
+.page-navigation{
+    margin-bottom:20px;
+    .back, .next{
+        font-size:12px;
+        color:white;
+        padding:13px 30px;
+        background-color:#887f69;
+        text-decoration:none;
+        font-weight:bold;
+        float:left;
+    }
+    
+    .next{
+        float:right;
+    }
+    
+}
+
 .shopguide{
     .title{
         font-size: 16px;
@@ -452,10 +470,10 @@ body{
         }
 
     }    
-    .recent_pro{
-        background-color:#f9f8f6;
+    .recent{
+        margin: 10px auto;
+//        background-color:#f9f8f6;
         text-align:center;
-        padding:10px;
     }    
 
 }
