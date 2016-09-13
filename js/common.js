@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  $(".mobile-menu-button").click(function(){
+    $(".mobile-dropmenu").slideToggle();
+  });
+  
+  
+  
   $(".humberger").click(function(){
     if($(this).find('img.toggleicon').attr('src') == "./images/top/next_icon.png"){
       $(this).find('img.toggleicon').attr('src','./images/top/down_icon.png');
