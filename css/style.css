@@ -1,5 +1,10 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: #f9f8f6; }
+  background-color: #f9f8f6;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif; }
 
 .sp {
   display: none; }
@@ -79,11 +84,13 @@ body {
   width: 45%;
   margin: 2px;
   padding: 15px;
-  float: left; }
+  float: left;
+  height: 240px; }
   .shopguide .title {
     font-size: 16px;
     color: #887f69;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    font-weight: bold; }
   .shopguide .heading {
     color: #887f69;
     margin-bottom: 5px;
@@ -190,7 +197,7 @@ body {
     margin-bottom: 5px;
     border: 0px; }
   .sidebar .search p {
-    color: #887f69;
+    column-rule: #887f69;
     font-weight: bold;
     margin-bottom: 5px; }
 .sidebar ul li {

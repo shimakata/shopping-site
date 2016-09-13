@@ -1,5 +1,25 @@
+@charset "utf-8";
+html {
+  font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 12) {
+  font-size: $size+ px;
+  font-size: ($size / $base) * 1rem;
+}
+
+$ja_font: "ヒラギノ角ゴ Pro W3",
+"Hiragino Kaku Gothic Pro",
+メイリオ,
+Verdana,
+"ＭＳ Ｐゴシック",
+sans-serif;
+$basecolor: #f9f8f6;
+$subcolor: #887f69;
+
 body{
-    background-color:#f9f8f6;
+    background-color:$basecolor;
+    font-family: $ja_font;
 }
 
 .sp{
@@ -30,7 +50,7 @@ body{
     min-width:960px;
     text-align:center;
     hr{
-        color:#f9f8f6;
+        color:$basecolor;
     }
     .totop{
         text-align:right;
@@ -90,7 +110,7 @@ body{
         font-size:12px;
         color:white;
         padding:13px 30px;
-        background-color:#887f69;
+        background-color:$subcolor;
         text-decoration:none;
         font-weight:bold;
         float:left;
@@ -105,11 +125,12 @@ body{
 .shopguide{
     .title{
         font-size: 16px;
-        color: #887f69;
+        color: $subcolor;
         margin-bottom:5px;
+        font-weight:bold;
     }
     .heading{
-        color: #887f69;
+        color: $subcolor;
         margin-bottom:5px;
         font-size:12px;
     }
@@ -122,6 +143,7 @@ body{
     margin:2px;
     padding:15px;
     float:left;
+    height:240px;
 }
 
 .top-content{
@@ -134,7 +156,7 @@ body{
         padding:10px;
         p{
             font-size:11px;
-            color: #887f69;
+            color: $subcolor;
             margin:0px;
         }
         margin-bottom:10px;
@@ -154,8 +176,8 @@ body{
         }
         hr{
             margin:15px 0px;
-            color: #887f69;
-            background-color:#887f69;
+            color: $subcolor;
+            background-color: $subcolor;
         }
         .thumbs{
             padding:0px;
@@ -181,9 +203,9 @@ body{
             background-color:#f9f9f5;
             tr{
                 td{
-                    border:1px solid #887f69;                    
+                    border:1px solid $subcolor;                    
                     text-align:center;
-                    color:#887f69;
+                    color: $subcolor;
                     input{
                         margin:0px;
                     }
@@ -197,7 +219,7 @@ body{
         .pricecart{
             .price{
                 float:left;
-                border: 1px solid #887f69;
+                border: 1px solid $subcolor;
                 border-width: 1px 0px 1px 0px;
                 padding:10px 0px;
                 img{
@@ -221,7 +243,7 @@ body{
         }
         .quality{
             padding: 10px 0px;
-            border: 1px solid #887f69;
+            border: 1px solid $subcolor;
             border-width: 0px 0px 1px 0px;
             margin-bottom:20px;
             img{
@@ -235,7 +257,7 @@ body{
         }
         .products-memo{
             .title{
-                color: #887f69;
+                color: $subcolor;
                 padding: 0px 0px;
                 margin:0px;
             }
@@ -259,9 +281,10 @@ body{
             background-position: 90%;
             margin-bottom:5px;
             border:0px;
+            
         }
         p{
-            color: #887f69;
+            column-rule: $subcolor;
             font-weight:bold;
             margin-bottom:5px;
         }
@@ -275,7 +298,7 @@ body{
                 font-size:12px;
                 color:white;
                 padding:13px;
-                background-color:#887f69;
+                background-color: $subcolor;
             }
             .humberger{
                 img{
@@ -300,7 +323,7 @@ body{
                         margin:0px;
                         margin-bottom:3px;
                         padding:10px;
-//                        border-bottom:1px solid #887f69;
+//                        border-bottom:1px solid $subcolor;
                         img{
                             padding:3px;
                             float:right;
@@ -472,7 +495,7 @@ body{
     }    
     .recent{
         margin: 10px auto;
-//        background-color:#f9f8f6;
+//        background-color:$basecolor;
         text-align:center;
     }    
 
