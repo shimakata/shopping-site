@@ -54,30 +54,32 @@ body {
     font-size: 10px;
     color: #b8b4ac; }
 
-.products-list ul li {
-  margin: 3px;
-  padding: 0px;
-  width: 30%;
-  list-style: none;
-  display: inline-block; }
-  .products-list ul li .product {
-    width: 98%;
-    background-color: white;
-    padding: 10px 5px;
-    text-align: center; }
-    .products-list ul li .product a {
-      text-decoration: none; }
-    .products-list ul li .product img {
-      width: 100%; }
-    .products-list ul li .product .memo {
-      margin: 10px;
-      font-size: 12px;
-      text-align: left;
-      color: black; }
-    .products-list ul li .product .price {
-      margin: 10px;
-      font-size: 12px;
-      text-align: left; }
+.products-list ul {
+  text-align: center; }
+  .products-list ul li {
+    margin: 3px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 30%;
+    list-style: none;
+    display: inline-block; }
+    .products-list ul li .product {
+      background-color: white;
+      padding: 10px 5px;
+      text-align: center; }
+      .products-list ul li .product a {
+        text-decoration: none; }
+      .products-list ul li .product img {
+        width: 100%; }
+      .products-list ul li .product .memo {
+        margin: 10px;
+        font-size: 12px;
+        text-align: left;
+        color: black; }
+      .products-list ul li .product .price {
+        margin: 10px;
+        font-size: 12px;
+        text-align: left; }
 
 .page-navigation {
   margin-bottom: 20px; }
@@ -94,11 +96,12 @@ body {
 
 .shopguide {
   background-color: white;
-  width: 45%;
+  width: 48%;
   margin: 2px;
   padding: 15px;
   float: left;
-  height: 240px; }
+  height: 240px;
+  box-sizing: border-box; }
   .shopguide .title {
     font-size: 16px;
     color: #887f69;
@@ -113,18 +116,24 @@ body {
     font-size: 12px; }
   .shopguide .card {
     width: 70%; }
+  .shopguide .free {
+    width: 60%; }
 
 .itemtitle {
   width: 100%; }
 
-.products-content .breadcrumb {
+.breadcrumb {
   background-color: #e8e4da;
   padding: 10px;
   margin-bottom: 10px; }
-  .products-content .breadcrumb p {
+  .breadcrumb p {
     font-size: 11px;
     color: #887f69;
     margin: 0px; }
+
+.category-image {
+  width: 100%; }
+
 .products-content .products-content-inner {
   background-color: white;
   padding: 30px 65px; }
@@ -328,9 +337,11 @@ body {
     padding: 15px 0px; }
     .products-content .products-content-inner .products-name {
       float: none;
-      margin-bottom: 3px; }
+      margin-bottom: 3px;
+      margin: 10px; }
     .products-content .products-content-inner .products-code {
-      float: none; }
+      float: none;
+      margin: 10px; }
     .products-content .products-content-inner .main-img {
       width: 100%; }
     .products-content .products-content-inner .thumbs {
