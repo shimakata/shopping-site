@@ -24,7 +24,6 @@ body{
 }
 
 .header{
-    min-width:670px;
     padding-top:20px;
     .logo{
         margin:10px;
@@ -61,7 +60,6 @@ body{
 }
 
 .footer{
-    min-width:670px;
     text-align:center;
     hr{
         color:$basecolor;
@@ -90,15 +88,20 @@ body{
 .products-list{
     ul{
         text-align: center;
-
+        margin:0px;
+        padding:0px;
+        text-align: left;
         li{
-            margin:3px;
+            
+            margin:0px;
             padding:0px;
             box-sizing: border-box;
-            width:30%;
+            width:32%;
             list-style: none;
             display: inline-block;
             .product{
+                margin:0px;
+                width:100%;
 //                width:98%;
                 background-color:white;
                 padding:10px 5px;
@@ -107,7 +110,9 @@ body{
                     text-decoration:none;
                 }
                 img{
-                    width:100%;
+                    width:90%;
+                    margin:0px;
+                    padding:0px;
                 }
                 .memo{
                     margin:10px;
@@ -143,6 +148,12 @@ body{
     
 }
 
+.shopguides{
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
 .shopguide{
     .title{
         font-size: 16px;
@@ -166,14 +177,24 @@ body{
         width:60%;
     }
     background-color:white;
-    width:48%;
-    margin:2px;
+    width:49%;
+    margin:0px;
     padding:15px;
     float:left;
     height:240px;
     box-sizing: border-box;
-
 }
+
+.shopguide + .shopguide{
+    margin-left:5px;
+}
+
+.recent{
+    margin-top: 20px;
+    margin-bottom:10px;
+    text-align:center;
+}    
+
 
 .top-content{
 ///    min-width:710px;
@@ -181,6 +202,7 @@ body{
 
 .itemtitle{
     width:100%;
+    margin: 15px auto;
 }
 
 .breadcrumb{
@@ -390,109 +412,16 @@ body{
     clear:both;
 }
 
+@media (max-width: 1220px){
 
-@media (max-width: 510px) {
-    .sp{
-        display:block;
-    }
-    .pc{
-        display:none;
-    }
-    .container{
-        padding: 0 10px;
-    }
-    body{
-//        background-color:red;
-    }
-    .header, .footer, .maincontent, .top-content {
-        min-width:0px;
-    }
-    
-    .header{
-        text-align:center;
-        .logo{
-        }
-        .pc-menu{
-            display:none;
-        }
-        .mobile-menu{
-            margin:0px;
-            display:block;
-            float:none;
-        }
-    }
-    
-    .top-content{
-        width:100%;
-        .owl-carousel{
-            width:100%;
-            img{
-            }
-        }
-
-    }
-
-    .itemtitle{
-        margin: 15px auto;
-        width:auto;
-    }
-    .products-list{
-        ul{
-            li{
-                width:46%;
-                .product{
-                    img{
-                        width:100%;
-                    }
-                    .memo{
-                        margin:3px;
-
-                    }
-                    .price{
-                        margin:3px;
-                    }
-                }
-            }
-        }    
-    }
-
-    .shopguide{
-        img.card{
-            width:100%;
-        }
-        width:90%;
-        margin:0px;
-        margin-bottom:3px;
-        float:none;
-    }
-    
-    .sidebar{
-        margin-top:10px;
-        min-width:180px;
-    }
-    .sidetab{
-        img.sidetabimage{
-            width:45% !important;
-            float:left;
-        }
-        .memo{
-            font-size:12px;
-            padding:5px;
-            padding-left:48%;
-            margin-bottom:10px;
-        }
-        .more{
-            margin-top:0px;
-            margin-left:40%;
-        }
-    }
-    .footer{
-        .totop{
-            text-align:center;
-        }
-    }
-    
     .products-content{
+        .sp{
+            display:block;
+        }
+        .pc{
+            display:none;
+        }        
+        width: 100% !important;
         .products-content-inner{
             padding:15px 0px;
             .products-name{
@@ -518,9 +447,11 @@ body{
                 list-style: none;
     //            display: inline-block;
                 li{
-                    width: 18%;
-                    padding:0px;
-                    margin:2px;
+                    box-sizing: border-box;
+                    width: 20%;
+                    padding:2px;
+                    margin:0px;
+                    //margin:2px;
                     float:left;
                     img{
                         width: 100%;
@@ -549,11 +480,160 @@ body{
 
         }
 
+        .itemtitle{
+            margin: 15px auto;
+            width:auto;
+        }
+
+    }
+    .sidebar-product{
+        margin: 30px 0px 0px 0px !important;
+        min-width:180px;
+
+        width: 100% !important;
+        box-sizing: border-box;
+        
     }    
-    .recent{
-        margin: 10px auto;
-//        background-color:$basecolor;
+    
+}
+
+@media (max-width: 850px){
+    .header{
         text-align:center;
+        .logo{
+        }
+        .pc-menu{
+            display:none;
+        }
+        .mobile-menu{
+            margin:0px;
+            display:block;
+            float:none;
+        }
+    }
+
+    .sidebar{
+        margin: 30px 0px 0px 0px !important;
+        min-width:180px;
+
+        width: 100% !important;
+        box-sizing: border-box;
+        
+    }
+    .top-content{
+        width: 100% !important;
+    }
+    .sidetab{
+        img.sidetabimage{
+            width:45% !important;
+            float:left;
+        }
+        .memo{
+            font-size:12px;
+            padding:5px;
+            padding-left:48%;
+            margin-bottom:10px;
+        }
+        .more{
+            margin-top:0px;
+            margin-left:40%;
+        }
     }    
+
+    .shopguide{
+        img.card{
+            width:100%;
+        }
+        width:100%;
+        margin:0px;
+        margin-bottom:3px;
+        float:none;
+    }
+    .shopguide + .shopguide{
+        margin-left:0px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .sp{
+        display:block;
+    }
+    .pc{
+        display:none;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    body{
+//        background-color:red;
+    }
+    .header, .footer, .maincontent, .top-content {
+        min-width:0px;
+    }
+    
+    
+    .top-content{
+        width:100%;
+        .owl-carousel{
+            width:100%;
+            img{
+            }
+        }
+
+    }
+
+    .itemtitle{
+        margin: 15px auto;
+        width:auto;
+    }
+    .products-list{
+        ul{
+            li{
+                width:48%;
+                .product{
+                    img{
+                        width:95%;
+                    }
+                    .memo{
+                        margin:3px;
+
+                    }
+                    .price{
+                        margin:3px;
+                    }
+                }
+            }
+        }    
+    }
+
+    
+    .sidebar{
+        margin-top:10px;
+        min-width:180px;
+    }
+    .sidetab{
+        img.sidetabimage{
+            width:45% !important;
+            float:left;
+        }
+        .memo{
+            font-size:12px;
+            padding:5px;
+            padding-left:48%;
+            margin-bottom:10px;
+        }
+        .more{
+            margin-top:0px;
+            margin-left:40%;
+        }
+    }
+    .footer{
+        .totop{
+            text-align:center;
+        }
+    }
+    
+
 
 }

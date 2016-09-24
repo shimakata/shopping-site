@@ -1,5 +1,24 @@
+
+
 /**
  * Owl Carousel v2.1.0
  * Copyright 2013-2016 David Deutsch
  * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
  */
+
+ .owl-nav {
+   display: none; }
+ .owl-dots {
+   position: relative;
+   top: 0; }
+ .owl-dots .owl-dot {
+   display: inline-block; }
+ .owl-dots .owl-dot span {
+     display: block;
+     border-radius: 0;
+     width: 25px;
+     height: 2px;
+     margin: 0 8px 0 0;
+     background-color: #aaaaaa; }
+ .owl-dots .active span {
+   background-color: #9d1a2d !important; }
